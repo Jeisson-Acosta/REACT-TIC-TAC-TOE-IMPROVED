@@ -1,0 +1,55 @@
+.board {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 12px;
+}
+.board h1 {
+  margin: 0;
+}
+.game {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 14px;
+}
+.square {
+  user-select: none;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid #ffff;
+  width: 120px;
+  height: 120px;
+  border-radius: 6px;
+  font-size: 28px;
+}
+.turn {
+  display: flex;
+  gap: 12px;
+}
+.selected {
+  background: rgb(18, 123, 184);
+}
+.winner {
+  position: absolute;
+  width: 100vw;
+  height: 100vh;
+  background: rgba(255, 255, 255, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.win {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 260px;
+  height: 260px;
+  background: rgb(48, 48, 48);
+  border-radius: 10px;
+  gap: 8px;
+}
